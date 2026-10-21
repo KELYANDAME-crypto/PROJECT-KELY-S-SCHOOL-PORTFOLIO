@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact page for Kelyandame Oluwafolajimi Akinlade." />
+    <title>Contact | Kelyandame</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Kelyandame home page">
+          <span class="brand-mark">KA</span>
+          <span data-student-name="first">Kelyandame</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <nav aria-label="Primary navigation">
+          <ul id="primary-nav" class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Use this form to send a message. The website validates the form on the client side and does not send data to a server.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container form-shell">
+          <div class="form-panel card">
+            <div class="section-heading section-heading-left">
+              <h2>Send a message</h2>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <label for="full-name">Full name</label>
+                <input id="full-name" name="full-name" type="text" required aria-describedby="full-name-error" />
+                <div id="full-name-error" class="field-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" required aria-describedby="email-error" />
+                <div id="email-error" class="field-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" required aria-describedby="phone-error" />
+                <div id="phone-error" class="field-error" aria-live="polite"></div>
+              </div>
+
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+                <div id="message-error" class="field-error" aria-live="polite"></div>
+              </div>
+
+              <button type="submit" class="button button-primary">Submit</button>
+              <div id="success-message" class="success-message" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="contact-panel">
+            <div class="section-heading section-heading-left">
+              <h2>Notes</h2>
+            </div>
+            <p>
+              This static project does not include a backend or an email service. A success message confirms that the form passed client-side validation only.
+            </p>
+            <ul class="check-list">
+              <li>All fields must be filled in.</li>
+              <li>Email addresses must follow a valid format.</li>
+              <li>Phone numbers must contain digits only.</li>
+              <li>Real message delivery would need a backend or form service.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <p>&copy; <span data-current-year></span> <span data-student-name="full">Kelyandame Oluwafolajimi Akinlade</span></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

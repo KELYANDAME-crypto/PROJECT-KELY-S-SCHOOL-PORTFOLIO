@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Academic planner for Kelyandame's assignments and deadlines." />
+    <title>Academic Planner | Kelyandame</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/planner.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Kelyandame home page">
+          <span class="brand-mark">KA</span>
+          <span data-student-name="first">Kelyandame</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <nav aria-label="Primary navigation">
+          <ul id="primary-nav" class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Academic Planner</h1>
+          <p>Track assignments, deadlines, and revision tasks so your studies stay organised and manageable.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container planner-shell">
+          <aside class="task-panel">
+            <div class="section-heading section-heading-left">
+              <h2>Add New Task</h2>
+            </div>
+
+            <form id="task-form" class="task-form">
+              <div class="form-row">
+                <label for="task-title">Task title</label>
+                <input id="task-title" name="task-title" type="text" maxlength="120" placeholder="Example: Complete web design quiz" required />
+              </div>
+
+              <div class="form-row">
+                <label for="task-date">Due date</label>
+                <input id="task-date" name="task-date" type="date" />
+              </div>
+
+              <div class="form-row">
+                <span class="priority-label">Priority</span>
+                <div class="priority-row" role="radiogroup" aria-label="Task priority">
+                  <label class="option-chip" for="priority-low">
+                    <input id="priority-low" type="radio" name="priority" value="Low" />
+                    <span>Low</span>
+                  </label>
+                  <label class="option-chip selected" for="priority-medium">
+                    <input id="priority-medium" type="radio" name="priority" value="Medium" checked />
+                    <span>Medium</span>
+                  </label>
+                  <label class="option-chip" for="priority-high">
+                    <input id="priority-high" type="radio" name="priority" value="High" />
+                    <span>High</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="button button-primary">Add Task</button>
+            </form>
+          </aside>
+
+          <section class="task-list-panel" aria-label="Planner dashboard">
+            <div class="section-heading section-heading-left">
+              <h2>My Tasks</h2>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-box">
+                <span>Total</span>
+                <strong id="total-count">0</strong>
+              </div>
+              <div class="stat-box">
+                <span>Pending</span>
+                <strong id="pending-count">0</strong>
+              </div>
+              <div class="stat-box">
+                <span>Completed</span>
+                <strong id="completed-count">0</strong>
+              </div>
+            </div>
+
+            <div class="filter-bar" aria-label="Task filters">
+              <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="filter-btn" data-filter="pending" aria-pressed="false">Pending</button>
+              <button type="button" class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+            </div>
+
+            <p id="storage-status" class="storage-status" aria-live="polite"></p>
+            <div id="empty-state" class="empty-state visible">No tasks yet. Add your first academic task to get started.</div>
+            <div id="task-list" class="task-list" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <p>&copy; <span data-current-year></span> <span data-student-name="full">Kelyandame Oluwafolajimi Akinlade</span></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Academic planner preview</title>
+  <desc id="desc">A dashboard for planning assignments and tasks.</desc>
+  <rect width="800" height="520" fill="#f6f8ff"/>
+  <rect x="70" y="70" width="660" height="380" rx="26" fill="#ffffff" stroke="#e0eaff"/>
+  <rect x="100" y="100" width="220" height="300" rx="20" fill="#edf4ff"/>
+  <rect x="360" y="100" width="330" height="60" rx="18" fill="#e9eefc"/>
+  <rect x="380" y="122" width="138" height="16" rx="8" fill="#1a3f75"/>
+  <rect x="376" y="190" width="290" height="80" rx="20" fill="#eef3ff"/>
+  <rect x="392" y="212" width="112" height="18" rx="9" fill="#678ee8"/>
+  <rect x="392" y="240" width="178" height="16" rx="8" fill="#dfeaff"/>
+  <rect x="376" y="290" width="290" height="90" rx="20" fill="#f4f1ff"/>
+  <circle cx="160" cy="148" r="30" fill="#173f7a"/>
+  <rect x="130" y="210" width="175" height="18" rx="9" fill="#dfeaff"/>
+  <rect x="130" y="248" width="150" height="18" rx="9" fill="#dfeaff"/>
+  <rect x="130" y="286" width="168" height="18" rx="9" fill="#dfeaff"/>
+  <rect x="130" y="324" width="140" height="18" rx="9" fill="#dfeaff"/>
+</svg>

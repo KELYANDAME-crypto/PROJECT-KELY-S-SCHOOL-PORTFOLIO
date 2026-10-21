@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student portfolio and academic management website for Kelyandame Oluwafolajimi Akinlade, a Miva Open University student in Data Science." />
+    <title>Kelyandame | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Kelyandame home page">
+          <span class="brand-mark">KA</span>
+          <span data-student-name="first">Kelyandame</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <nav aria-label="Primary navigation">
+          <ul id="primary-nav" class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Miva Open University Student</span>
+            <h1>Hello, I'm <span data-student-name="first">Kelyandame</span>.</h1>
+            <p class="lead">
+              I am a student at Miva Open University studying in the Data Science programme while
+              building a strong foundation in web technologies, problem-solving, and digital skills.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="projects.html">Explore My Projects</a>
+              <a class="button button-secondary" href="about.html">About Me</a>
+            </div>
+            <div class="badge-row" aria-label="Profile highlights">
+              <span class="badge">Web Technologies</span>
+              <span class="badge">Data Science</span>
+              <span class="badge">Continuous Learning</span>
+            </div>
+          </div>
+
+          <div class="profile-visual">
+            <div class="profile-photo-wrap">
+              <img class="profile-photo" src="assets/profile.jpeg" alt="Profile photograph of Kelyandame." />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About My Journey</h2>
+            <p>I am building practical digital skills while growing academically and personally.</p>
+          </div>
+
+          <div class="bio-box">
+            <p>
+              I am a student at Miva Open University, currently developing my understanding of computing and
+              the web through coursework in introductory web technologies. My academic focus is Data Science,
+              and I am gradually building practical knowledge in programming, web development, and digital tools.
+              I enjoy learning how digital solutions can be used to solve real problems and communicate ideas clearly.
+            </p>
+            <p>
+              Before this stage of my academic journey, I worked in administrative and customer-facing roles,
+              including as a secretary and sales representative in a travel agency setting. That experience strengthened my
+              communication, organisational, and record-keeping skills, and it helped me build confidence in handling
+              inquiries, supporting customers, and managing daily administrative tasks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Technical Skills</h2>
+            <p>Skills I am learning and developing with honesty and curiosity.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>Web Development</h3>
+              <p>Currently learning HTML, CSS, and JavaScript to build responsive, accessible websites.</p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Programming</h3>
+              <p>Strengthening my logic and problem-solving through Python practice and small projects.</p>
+              <ul class="tech-list">
+                <li>Python</li>
+                <li>Problem Solving</li>
+                <li>Logic</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Productivity Tools</h3>
+              <p>I use Microsoft Office tools for documentation, presentation, and data organisation.</p>
+              <ul class="tech-list">
+                <li>Word</li>
+                <li>Excel</li>
+                <li>PowerPoint</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Selected Projects</h2>
+            <p>Examples of learning projects and demonstrations I am building.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="project-card">
+              <img src="assets/project-portfolio.svg" alt="Student portfolio website preview illustration." />
+              <h3>Student Portfolio Website</h3>
+              <p>A responsive personal portfolio presenting my background, skills, and learning goals.</p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="projects.html#project-portfolio">View details</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/project-planner.svg" alt="Academic planner dashboard preview illustration." />
+              <h3>Academic Task Planner</h3>
+              <p>An interactive planning tool for assignments, due dates, and task tracking.</p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>localStorage</li>
+              </ul>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="projects.html#project-planner">View details</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/project-inventory.svg" alt="Inventory tracker mock-up illustration." />
+              <h3>Customer Service Tracker</h3>
+              <p>A sample interface showing how customer inquiries and product records can be organised.</p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="projects.html#project-inventory">View details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container layout-split">
+          <div>
+            <div class="section-heading section-heading-left">
+              <h2>Academic Goals</h2>
+            </div>
+            <div class="goal-box">
+              <ul class="check-list">
+                <li>Improve my consistency in coursework and independent study.</li>
+                <li>Strengthen practical problem-solving and technical understanding.</li>
+                <li>Develop better time management and productivity habits.</li>
+                <li>Build my confidence in using digital tools and web technologies.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-heading section-heading-left">
+              <h2>Academic Planner Preview</h2>
+            </div>
+            <div class="goal-box">
+              <p>
+                I use an academic planner to stay organised, track deadlines, and manage my assignments in a
+                structured way. This helps me keep my studies focused and my progress visible.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="planner.html">Open Planner</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="callout">
+            <h3>Let’s connect</h3>
+            <p>I'm open to learning, collaboration, and discussing ideas about technology, data, and web development.</p>
+            <div class="hero-actions">
+              <a class="button button-secondary button-on-dark" href="contact.html">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <p>&copy; <span data-current-year></span> <span data-student-name="full">Kelyandame Oluwafolajimi Akinlade</span></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

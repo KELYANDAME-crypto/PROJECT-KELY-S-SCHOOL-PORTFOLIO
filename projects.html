@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project portfolio showing learning projects and demonstrations by Kelyandame Oluwafolajimi Akinlade." />
+    <title>Projects | Kelyandame</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand" aria-label="Kelyandame home page">
+          <span class="brand-mark">KA</span>
+          <span data-student-name="first">Kelyandame</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <nav aria-label="Primary navigation">
+          <ul id="primary-nav" class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Projects</h1>
+          <p>These portfolio items show my learning projects, practical demonstrations, and ongoing progress in web development and digital problem-solving.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Learning Projects</h2>
+            <p>Coursework and demonstrations built to practise web development and problem-solving.</p>
+          </div>
+          <div class="grid-3">
+            <article class="project-card" id="project-portfolio">
+              <img src="assets/project-portfolio.svg" alt="Student portfolio website illustration." />
+              <h3>Student Portfolio Website</h3>
+              <p>
+                A responsive personal website presenting my background, developing technical skills, and academic growth.
+                This project reflects my progress in HTML, CSS, and JavaScript as part of my coursework.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="badge-row">
+                <span class="badge">Coursework project</span>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="index.html">View homepage</a>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-planner">
+              <img src="assets/project-planner.svg" alt="Academic task planner dashboard illustration." />
+              <h3>Academic Task Planner</h3>
+              <p>
+                An interactive student planner that helps organise assignments, track important dates, and mark tasks as complete.
+                It uses localStorage so tasks remain available after a browser refresh.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>localStorage</li>
+              </ul>
+              <div class="badge-row">
+                <span class="badge">Learning project</span>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="planner.html">Open planner</a>
+              </div>
+            </article>
+
+            <article class="project-card" id="project-inventory">
+              <img src="assets/project-inventory.svg" alt="Customer service and inventory tracker illustration." />
+              <h3>Customer Service and Inventory Tracker</h3>
+              <p>
+                A demonstration interface for organising customer inquiries, product records, and simple inventory information.
+                This reflects the connection between my previous sales and administrative experience and my interest in technology.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="badge-row">
+                <span class="badge">Demonstration project</span>
+              </div>
+              <div class="hero-actions">
+                <a class="button button-secondary" href="contact.html">Contact me</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="media-box">
+            <div class="section-heading section-heading-left">
+              <h2>Multimedia Demonstration</h2>
+            </div>
+            <p>
+              This section is ready for a personal video. No recording has been supplied yet, so the player stays hidden
+              until a valid local MP4 is added.
+            </p>
+            <video id="portfolio-video" controls preload="metadata" poster="assets/project-portfolio.svg" aria-label="Portfolio introduction video" hidden>
+              <!-- Add a source element here when a personal video is available. -->
+            </video>
+            <div id="media-fallback" class="media-fallback">
+              <img src="assets/project-portfolio.svg" alt="Illustration used as a placeholder for a portfolio introduction video." />
+              <p>
+                To add a personal recording, place it at <code>assets/portfolio-intro.mp4</code> and add a matching MP4 source inside the video element in <code>projects.html</code>. This illustration is a visual placeholder, not a recording.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>
+          <p>&copy; <span data-current-year></span> <span data-student-name="full">Kelyandame Oluwafolajimi Akinlade</span></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="planner.html">Planner</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
